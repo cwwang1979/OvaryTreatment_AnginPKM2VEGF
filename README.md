@@ -17,14 +17,6 @@ Execution file, configuration file, and models are download from the [zip](addre
 ```
 OvaryTreatment_AnginPKM2VEGF/
 │
-├── BB_Segmentation
-│   ├── AfterSeg_BB_tileout/
-│   ├── BB_tileout/
-│   ├── model/
-│   │   └── TMAIHC_All_i30w.caffemodel
-│   ├── deploy.prototxt
-│   └── getDectorbbox.py
-│
 ├── Data/ - training and testing data location
 │   ├── invalid-PKM2_0/
 │   │   ├── 10_2.bmp
@@ -54,40 +46,51 @@ OvaryTreatment_AnginPKM2VEGF/
 │       │       ⋮
 │       └── 100_22.bmp
 │
-├── Detection_ROI/
-│   ├── input_img/
-│   │   ├── Ann.json
-│   │   └── effective-PKM2_200x.svs
-│   ├── model/
+├── Detection_ROI/ - detect the tissue core 
+│   ├── input_img/ - put the SVS file
+│   │   └── effective-PKM2.svs/
+│   │       ├── setting.json - configuration file
+│   │       └── effective-PKM2.svs
+│   ├── model/ - model of the detector
 │   │   └── _iter_100.caffemodel
 │   ├── ClassId.txt
+│   ├── caffe_root.txt - set the caffe root
 │   ├── deploy_roi.prototxt
-│   ├── detected2
-│   └── Picture_test_all_TMA
+│   ├── detected2.json - configuration file
+│   └── Main_Detection_ROI - execution file
 │
-├── List/
-│   ├── TestingList.txt
-│   ├── TestingList_highest.txt
-│   └── TrainingList.txt
+├── BB_Segmentation - extract the tumor tissue
+│   ├── AfterSeg_BB_tileout/ - storage location of tumor patches
+│   ├── BB_tileout/ - storage location of normal patches
+│   ├── model/ - model of the segmentation
+│   │   └── TMAIHC_All_i30w.caffemodel
+│   ├── deploy.prototxt
+│   ├── caffe_root.txt - set the caffe root
+│   └── Main_Segmentation - execution file
 │
 ├── List_Preprocessing/
-│   ├── attentionScoring.py
-│   └── filter.py
+│   └── Main_List_Preprocessing - execution file
 │
-├── Testing/
-│   ├── model
-│   │   ├── Angin_proposed.caffemodel
-│   │   ├── PKM2_proposed.caffemodel
-│   │   └── VEGF_proposed.caffemodel
-│   ├── deploy.prototxt
-│   └── inference_TMA.py
+├── List/ - demo list
+│   ├── TestingList_all.txt
+│   ├── TestingList_attentionScoring.txt
+│   ├── TrainingList_all.txt
+│   └── TrainingList_filter.txt
 │
-└── Trainining/
-    ├── Model
-    ├── slover.py
-    ├── solver.prototxt
-    ├── train.prototxt
-    ├── voc_layers.py
-    └── voc_layers.pyc
+├── Trainining/
+│   ├── Model - storage location of training models
+│   ├── slover.py - execution file
+│   ├── solver.prototxt - configuration file
+│   ├── train.prototxt
+│   ├── voc_layers.py
+│   └── voc_layers.pyc
+│
+└── Testing/ 
+    ├── model - demo model
+    │   └── PKM2_proposed.caffemodel
+    ├── deploy.prototxt
+    └── inference_TMA.py - execution file
+
+
 
 ```
