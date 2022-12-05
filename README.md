@@ -91,6 +91,30 @@ OvaryTreatment_AnginPKM2VEGF/
     ├── deploy.prototxt
     └── inference_TMA.py - execution file
 
-
-
 ```
+
+#### Detection_ROI
+Open the caffe_root.txt and detected2.json files to set up the root of caffe and the name of WSI to use.
+The file format of detected2.json is as follow:
+```
+[
+    {
+        "Folder": "effective-PKM2.svs",
+        "Image": "effective-PKM2.svs"
+    }
+]
+```
+Then in a terminal run:
+```
+./Main_Detection_ROI
+```
+After running in a terminal, the result will be produced in two folder named "result" and "result_anno"
+
+#### BB_Segmentation
+Open the caffe_root.txt file to set up the root of caffe to use.
+
+#### List_Preprocessing
+
+#### Trainining
+
+#### Testing
