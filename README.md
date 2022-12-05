@@ -93,7 +93,9 @@ OvaryTreatment_AnginPKM2VEGF/
 
 ```
 
-#### Detection_ROI
+## Steps
+
+#### 1.Detection_ROI
 Open the caffe_root.txt and detected2.json files to set up the root of caffe and the name of WSI to use.
 The file format of detected2.json is as follow:
 ```
@@ -104,17 +106,25 @@ The file format of detected2.json is as follow:
     }
 ]
 ```
+
 Then in a terminal run:
 ```
 ./Main_Detection_ROI
 ```
 After running in a terminal, the result will be produced in two folder named "result" and "result_anno"
 
-#### BB_Segmentation
+#### 2.BB_Segmentation
 Open the caffe_root.txt file to set up the root of caffe to use.
 
-#### List_Preprocessing
+Then in a terminal run:
+```
+./Main_Segmentation
+```
 
-#### Trainining
 
-#### Testing
+#### 3.List_Preprocessing
+Open the caffe_root.txt file to set up the root of caffe to use.
+
+#### 4.Trainining
+
+#### 5.Testing
