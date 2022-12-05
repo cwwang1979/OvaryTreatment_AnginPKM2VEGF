@@ -79,7 +79,7 @@ OvaryTreatment_AnginPKM2VEGF/
 │
 ├── Trainining/
 │   ├── Model - storage location of training models
-│   ├── slover.py - execution file
+│   ├── solver.py - execution file
 │   ├── solver.prototxt - configuration file
 │   ├── train.prototxt
 │   ├── voc_layers.py
@@ -132,19 +132,32 @@ Then in a terminal run:
 ./Main_List_Preprocessing
 ```
 
-After running in a terminal, it will produce two ".txt" files named  "TestingList_attentionScoring.txt" and "TrainingList_filter.txt"
+After running in a terminal will produce two ".txt" files named  "TestingList_attentionScoring.txt" and "TrainingList_filter.txt"
 
 #### 4.Trainining
-Open the "slover.py" and "voc_layers.py" files to set up the storage location of training models and the location of training list.
+Open the "solver.py" and "voc_layers.py" files to set up the storage location of training models and the location of training list("TrainingList_filter.txt") to use.
+
+Then in a terminal run:
+```
+python solver.py
+```
 
 #### 5.Testing
+Open the "inference_TMA.py" file to set up the storage location of training models and the location of testing list("TestingList_attentionScoring.txt") to use.
+
+Then in a terminal run:
+```
+python inference_TMA.py
+```
+
+## License
+This extension to the Caffe library is released under a creative commons license, which allows for personal and research use only. For a commercial license please contact Prof Ching-Wei Wang. You can view a license summary here:  
+http://creativecommons.org/licenses/by-nc/4.0/
 
 
-
-
-
-
-
-
-
-
+## Contact
+Prof. Ching-Wei Wang  
+  
+cweiwang@mail.ntust.edu.tw; cwwang1979@gmail.com  
+  
+National Taiwan University of Science and Technology
