@@ -95,7 +95,7 @@ OvaryTreatment_AnginPKM2VEGF/
 
 ## Steps
 
-#### 1.Detection_ROI
+#### 1. Detection_ROI
 Open the "caffe_root.txt" and "detected2.json" files to set up the root of caffe and the name of WSI to use.
 The file format of detected2.json is as follow:
 ```
@@ -114,7 +114,7 @@ Then in a terminal run:
 After running in a terminal, the result will be produced in two folders named "result" and "result_anno"
 
 
-#### 2.BB_Segmentation
+#### 2. BB_Segmentation
 Open the "caffe_root.txt" file to set up the root of caffe to use.
 
 Then in a terminal run:
@@ -123,7 +123,7 @@ Then in a terminal run:
 ```
 After running in a terminal, the image results will be produced in two folders named "AfterSeg_BB_tileout" and "BB_tileout"
 
-#### 3.List_Preprocessing
+#### 3. List_Preprocessing
 Before doing "List_Preprocessing" execution file, the list of all patches needs to be produced first as shown in "TestingList_all.txt" and
 "TrainingList_all.txt"
 
@@ -134,7 +134,7 @@ Then in a terminal run:
 
 After running in a terminal will produce two ".txt" files named  "TestingList_attentionScoring.txt" and "TrainingList_filter.txt"
 
-#### 4.Trainining
+#### 4. Trainining
 Open the "solver.py" and "voc_layers.py" files to set up the storage location of training models and the location of training list("TrainingList_filter.txt") to use.
 
 Then in a terminal run:
@@ -142,7 +142,7 @@ Then in a terminal run:
 python solver.py
 ```
 
-#### 5.Testing
+#### 5. Testing
 Open the "inference_TMA.py" file to set up the storage location of training models and the location of testing list("TestingList_attentionScoring.txt") to use.
 
 Then in a terminal run:
