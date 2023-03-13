@@ -11,7 +11,7 @@
 - cuDNN version >= 7.6.4
 
 #### Download
-Execution file, configuration file, and models are download from the [zip](https://drive.google.com/file/d/1aF2RuRANYdaxob2FQH_mikR3gfrlqPIV/view?usp=share_link) file.  (For reviewers, please use the manuscript ID CTM.............28 as the password to decompress the file.)
+Execution file, configuration file, and models are download from the [zip](https://drive.google.com/file/d/1MqGr6y_EgdS5CscmfWFmABvFkE1UCwe6/view?usp=share_link) file.  (For reviewers, "..._cwlab" is the password to decompress the file.)
 
 #### File structure
 ```
