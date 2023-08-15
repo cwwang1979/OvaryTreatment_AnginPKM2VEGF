@@ -81,7 +81,7 @@ OvaryTreatment_AnginPKM2VEGF/
 │   ├── TrainingList_all.txt
 │   └── TrainingList_filter.txt
 │
-├── Training/
+├── Trainining/
 │   ├── Model - storage location of training models
 │   ├── solver.py - execution file
 │   ├── solver.prototxt - configuration file
